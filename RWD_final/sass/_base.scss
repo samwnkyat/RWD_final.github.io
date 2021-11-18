@@ -1,0 +1,30 @@
+a{
+    text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    line-height:1.2
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+.container{
+    max-width:1024px;
+    margin:0 auto;
+    padding:50px 10px;
+    @include pad{
+        max-width:799;
+    }
+    @include mobile{
+        max-width:327px;
+        padding:50px 10px;
+    }
+}
+.wrap{
+    position:relative;
+    max-width:1024px;
+    margin:0 auto;
+  }
+  *,*:before,*:after {
+    box-sizing: border-box;
+  }

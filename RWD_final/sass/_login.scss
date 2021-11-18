@@ -1,0 +1,87 @@
+.login{
+    background:$color-primary-light;
+    color:$font-size-600;
+    padding-bottom:50px;
+    h2{
+        font-size:48px;
+        font-weight:bold;
+        text-align:center;
+        padding-top:50px;
+    }
+    h3{
+        font-size: $font-size-200;
+        text-align:center;
+        padding-top:5px;
+        font-weight:bold;
+    }
+    form{
+        max-width:300px;
+        margin:0 auto;
+        border-top:5px solid $color-secondary;
+        padding:15px;
+        box-shadow:2px 2px 5px 1px #cdc8c6;
+        h4{
+            font-size:$font-size-200;
+            text-align:center;
+            padding-bottom:16px;
+            font-weight:bold;
+        }
+        .login-mail{
+            position:relative;
+                   input{
+                    width:100%;
+                    padding:5px 0 5px 30px;
+                    margin:3px 0 15px 0; 
+                   }
+                   i{
+                    position:absolute;
+                    color:#a08bb3;
+                    top:40%;
+                    left:3%;
+                   }
+        }
+        .login-password{
+            position:relative;
+            input{
+                width:100%;
+                padding:5px 0 5px 30px;
+                margin:3px 0 15px 0; 
+               }
+               i{
+                position:absolute;
+                color:#a08bb3;
+                top:40%;
+                left:3%;
+               }
+        } 
+        .login-form{
+            .forget{
+                color:red;
+                font-size:$font-size-100;
+            }
+            .forget:hover{
+                color:$color-primary;
+            }
+        }
+        .login-button{
+            display:flex;
+            justify-content: space-between;
+            padding:30px 0 15px 0;
+            .orange{
+                background:#f56c23;
+            }
+            .gray{
+                background:rgba(0, 0, 0, 0.4);
+            }
+            input,a{
+                color:white;
+                border-radius:3px;
+                padding:6px 40px;
+                transition:0.4s ease;
+            }
+            input:hover, a:hover{
+                opacity:0.6;
+            }
+        }
+    }
+}

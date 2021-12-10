@@ -1,0 +1,228 @@
+/* 購物車頁面 */
+
+.cart{
+    background:$color-primary-light;
+    color:$color-primary;
+    padding:50px 40px;
+    display:flex;
+    @include pad{
+        flex-direction:column;
+    }
+    .aside{
+        width:23%;
+        @include pad{
+            width:100%;
+            text-align:center;
+            display:flex;
+            flex-direction:column;
+        }
+        i{
+            font-size:$font-size-300;
+            padding-right:15px;
+        }
+        h2{
+            font-size:$font-size-200;
+            padding-right:15px;
+        }
+        a{
+            display:block;
+            color:$color-primary;
+            padding:15px 0 15px 5px;
+            border-bottom:1px solid $color-primary;
+            transition:0.3s ease;
+            &:hover{
+                background:$color-primary;
+                color:$color-primary-light;
+            }
+            @include pad{
+                font-size:$font-size-100;
+            }
+        }
+    }
+    .cart-container{
+        width:78%;
+        padding-left:2%;
+        @include pad{
+            width:100%;
+            padding:30px 0 0 0;
+        }
+    }
+    .cart-nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding-bottom:26px;
+        @include mobile{
+            flex-direction:column;
+        }
+        .search{
+            position:relative;
+            width:70%;
+            @include mobile{
+               width:100%;
+               padding-bottom:20px;
+            }
+            input{
+                width:90%;
+                padding:7px 0;
+                border-radius:0;
+                border:3px solid $color-primary;
+                border-right:none;
+                background:$color-primary-light; 
+                @include mobile{
+                    padding:5px 0;
+                    border:2px solid $color-primary;
+                    border-right:none;
+                }
+            }
+            a{
+                position:absolute;
+                background:$color-primary;
+                color:$color-primary-light;
+                padding:6.5px;
+                border:3px solid $color-primary;
+                transition: 0.3s ease;
+                @include mobile{
+                    padding:3.5px;
+                }
+            }
+            &:hover{
+                background:#a32c00;
+            }
+        }
+        .cart-list{
+            a{
+                font-size:$font-size-200;
+                font-weight:bold;
+                color:$color-primary;
+                transition:0.3s ease; 
+            }
+            &:hover{
+                color:#a32c00;
+            }
+            .pay{
+                padding-right:16px;
+                border-right:1px solid $color-primary;
+            }
+            i{
+                position:relative;
+                padding-left:16px;
+                font-size:$font-size-300;  
+                span{
+                    position:absolute;
+                    top:-8px;
+                    right:-8px;
+                    font-size:12px;
+                    padding:2px 4px;
+                    color:$color-primary-light;
+                    background:$color-secondary;
+                    border:1px solid $color-primary-light;
+                    border-radius:50%; 
+                }
+            }
+        
+
+        } 
+    }
+    .cart-item{
+            display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            li{
+                width: 32.3333%;
+                position: relative;
+                text-align: center;
+                box-shadow: 2px 2px 4px 0 #979797;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                @include pad{
+                     width:45%;
+                }
+                @include mobile{
+                    width:100%;
+                }
+                img{
+                    width:100%;
+                }
+                .like{
+                    position:absolute;
+                    top :10px;
+                    left:10px;
+                    color:$color-primary-light;
+                    font-size:$font-size-300;
+                }
+                .far.fa-heart:hover{
+                    font-weight:bold;
+                  }
+                .far.fa-heart.fill{
+                    font-weight:bold;
+                }
+                .far.fa.fa-heart.fill{
+                    font-weight:bold;
+                }
+                .hot-wrap{
+                    width:100px;
+                    height:100px;
+                    overflow:hidden;
+                    position:absolute;
+                    top:-5px;
+                    right:-5px;
+                    .hot{
+                        position:relative;
+                        background:#00CC99;
+                        color:$color-primary-light;
+                        top:18px;
+                        right:10px;
+                        width:150px;
+                        padding:7px 5px;
+                        transform:rotate(45deg);
+                        box-shadow:0 2px 4px $color-secondary;
+                      }
+                }
+                h2{
+                    padding:11px 0 5px 0;
+                    font-size:$font-size-200;
+                }
+                h3{
+                    position:relative;
+                    font-size:12px;
+                    padding-bottom:50px;
+                    &::before{
+                        content: "";
+                        position:absolute;
+                        top:45%;
+                        left:35%;
+                        background:$color-primary;
+                        width:30%;
+                        height:1px;
+                    }
+                }
+                p{
+                    font-size:$font-size-200;
+                    padding-bottom:30px;
+                    font-style:italic;
+                    font-weight:bold;
+                }
+                .join{
+                    display:block;
+                    width:90%;
+                    margin:0 auto;
+                    padding:4px 0;
+                    color:$color-secondary;
+                    border:2px solid $color-secondary;
+                    border-radius:3px;
+                    transition: 0.3s ease;
+                    &:hover{
+                        color:$color-primary-light;
+                        background:$color-secondary;
+                    }
+                i{
+                    font-size: $font-size-100;
+                    margin-right: 9px;
+                }
+            }
+            
+        }
+    }
+}
+

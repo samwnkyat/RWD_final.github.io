@@ -1,10 +1,4 @@
-
-@import "reset";
-@import "variable"; 
-@import "utilities";
-@import "base"; 
-@import "layout";
-@import "index";    
-@import "cart";
-@import "login";
-@import "register";
+@import "helpers/helpers";
+@import "pages/pages";
+@import "layout/layout";
+@import "base/base";

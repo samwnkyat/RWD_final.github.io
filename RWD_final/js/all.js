@@ -5,6 +5,6 @@ $(document).ready(function () {
     });
     $('.far.fa-heart').click(function (e) {
         e.preventDefault();
-        $('this').toggleClass('fill');
+        $(this).toggleClass('fill');
     });
 });
